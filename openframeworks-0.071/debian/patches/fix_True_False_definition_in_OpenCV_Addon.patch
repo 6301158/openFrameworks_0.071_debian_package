@@ -1,0 +1,12 @@
+--- a/addons/ofxOpenCv/src/ofxOpenCv.h
++++ b/addons/ofxOpenCv/src/ofxOpenCv.h
+@@ -1,5 +1,9 @@
+ #pragma once
+ 
++// OpenCV defines True and False and breaks c++ compilations
++#undef True
++#undef False
++
+ //--------------------------
+ // constants
+ #include "ofxCvConstants.h"

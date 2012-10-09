@@ -1,0 +1,180 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+
+# These are used for cross-compiling and for saving the configure script
+# from having to guess our platform (since we know it already)
+DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+ifneq ($(DEB_HOST_GNU_TYPE),$(DEB_BUILD_GNU_TYPE))
+	CROSS= --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
+else
+	CROSS= --build $(DEB_BUILD_GNU_TYPE)
+endif
+
+
+# shared library versions, option 1
+version=0.0071
+major=0
+# option 2, assuming the library is created as src/.libs/libfoo.so.2.0.5 or so
+#version=`ls src/.libs/lib*.so.* | \
+# awk '{if (match($$0,/[0-9]+\.[0-9]+\.[0-9]+$$/)) print substr($$0,RSTART)}'`
+#major=`ls src/.libs/lib*.so.* | \
+# awk '{if (match($$0,/\.so\.[0-9]+$$/)) print substr($$0,RSTART+4)}'`
+
+
+config: config-stamp
+config-stamp:
+	dh_testdir
+	[ ! -d debian/patches ] || $(MAKE) -f /usr/share/quilt/quilt.make patch
+	touch $@
+
+ADDONS = ofxAccelerometer ofxDirList ofxNetwork ofxOsc ofxThreadedImageLoader \
+	ofxVectorMath ofx3DModelLoader ofxAssimpModelLoader ofxMultiTouch \
+	ofxOpenCv ofxThread ofxVectorGraphics ofxXmlSettings
+
+# does compile ofxMultiTouch in Linux?
+ADDONS = ofxAccelerometer ofxDirList ofxNetwork ofxOsc ofxThreadedImageLoader \
+	ofxVectorMath ofx3DModelLoader ofxAssimpModelLoader \
+	ofxOpenCv ofxThread ofxVectorGraphics ofxXmlSettings
+
+#ADDONS = ofxOsc
+
+clean: 
+	dh_testdir
+	dh_testroot
+	rm -f *-stamp
+
+	echo "" ; echo "CLEANING OpenFrameworks:" ; \
+	cd libs/openFrameworks && $(MAKE) -f $(CURDIR)/debian/openFrameworks.make \
+		clean
+#	cd libs/openFrameworksCompiled/project/linux && $(MAKE) clean
+
+	for a in $(ADDONS); do \
+		echo "" ; echo "CLEANING $$a:" ; \
+		cd $(CURDIR)/addons/"$$a" && \
+		$(MAKE) -f $(CURDIR)/debian/"$$a".make -I$(CURDIR)/debian/ \
+			clean || exit 1 ; \
+	done
+
+	rm -rf tmp debian/tmp
+	[ ! -d debian/patches ] || $(MAKE) -f /usr/share/quilt/quilt.make unpatch
+	dh_clean 
+
+build: build-stamp
+build-stamp: config-stamp
+	dh_testdir
+
+	echo "" ; echo "BUILDING OpenFrameworks:" ; \
+	cd libs/openFrameworks && $(MAKE) -f $(CURDIR)/debian/openFrameworks.make \
+		CFLAGS="$(CFLAGS)" \
+		LDFLAGS="-Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined"
+#	cd libs/openFrameworksCompiled/project/linux && $(MAKE) Release
+#	cd libs/openFrameworksCompiled/project/linux && $(MAKE) Debug
+
+	echo "" ; echo "INSTALLING OpenFrameworks:" ; \
+	cd libs/openFrameworks && $(MAKE) \
+		-f $(CURDIR)/debian/openFrameworks.make DESTDIR=$(CURDIR)/debian/tmp \
+		install
+
+	for a in $(ADDONS); do \
+		echo "" ; echo "BUILDING addon $$a:" ; \
+		cd $(CURDIR)/addons/"$$a" && \
+		$(MAKE) -f $(CURDIR)/debian/"$$a".make -I$(CURDIR)/debian/ \
+		CFLAGS="$(CFLAGS)" \
+		LDFLAGS="-Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined" || exit 1; \
+	done
+
+	chmod 644 `find $(CURDIR)/debian/tmp -name "*.h" -o -name "*.hpp"`
+
+	touch $@
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+
+	# dh_prep erases debian/tmp I have to copy the libraries again.
+	echo "" ; echo "INSTALLING OpenFrameworks:" ; \
+	cd libs/openFrameworks && $(MAKE) \
+		-f $(CURDIR)/debian/openFrameworks.make DESTDIR=$(CURDIR)/debian/tmp \
+		install
+
+	for a in $(ADDONS); do \
+		echo "" ; echo "INSTALLING $$a:" ; \
+		cd $(CURDIR)/addons/"$$a" && \
+		$(MAKE) -f $(CURDIR)/debian/"$$a".make -I$(CURDIR)/debian/ \
+		DESTDIR=$(CURDIR)/debian/tmp install || exit 1 ; \
+	done
+
+
+# Build architecture-independent files here.
+binary-indep: install
+
+# Build architecture-dependent files here.
+binary-arch: install
+#       dh_testdir tries to make sure that you are in the correct directory when building a Debian package. It makes
+#       sure that the file debian/control exists, as well as any other files you specify. If not, it exits with an
+#       error.
+	dh_testdir
+#       dh_testroot simply checks to see if you are root. If not, it exits with an error. Debian packages must be built
+#       as root, though you can use fakeroot(1)
+	dh_testroot
+#       dh_installchangelogs is a debhelper program that is responsible for installing changelogs into package build
+#       directories.
+	dh_installchangelogs
+#       dh_installdocs is a debhelper program that is responsible for installing documentation into
+#       usr/share/doc/package in package build directories.
+	dh_installdocs
+#       dh_installexamples is a debhelper program that is responsible for installing examples into
+#       usr/share/doc/package/examples in package build directories.
+#        dh_installexamples debian/examples/*
+#       dh_install is a debhelper program that handles installing files into package build directories. There are many
+#       dh_install* commands that handle installing specific types of files such as documentation, examples, man pages,
+#       and so on, and they should be used when possible as they often have extra intelligence for those particular
+#       tasks. dh_install, then, is useful for installing everything else, for which no particular intelligence is
+#       needed. It is a replacement for the old dh_movefiles command.
+	dh_install
+#       dh_installmenu
+#       dh_installdebconf
+#       dh_installinfo
+	dh_installman
+#       dh_link is a debhelper program that creates symlinks in package build directories.
+	dh_link
+#       dh_strip is a debhelper program that is responsible for stripping executables, shared
+#       libraries, and static libraries that are not used for debugging.
+	dh_strip --dbg-package=libopenframeworks0071-dbg
+	dh_compress
+	dh_fixperms
+#       dh_perl
+#       dh_python
+	dh_makeshlibs
+	test -e /usr/bin/dh_buildinfo && dh_buildinfo
+	dh_installdeb
+#    dh_shlibdeps is a debhelper program that is responsible for calculating
+#    shared library dependencies for packages.
+#	dh_shlibdeps
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+ORIGFILE="of_v0071_linux_release.tar.gz"
+ORIGDIR="of_v0071_linux_release"
+get-orig-source:
+	rm -fv ../openframeworks_0.071.orig.tar.gz
+	rm -fv $(ORIGFILE)
+	rm -rf $(ORIGDIR)
+	wget "http://www.openframeworks.cc/versions/v0.071/"$(ORIGFILE)
+	tar xvfz $(ORIGFILE)
+	rm $(ORIGFILE)
+	cd $(ORIGDIR) && sh ../debian/remove_unneeded.sh
+	tar cvfz ../openframeworks_0.071.orig.tar.gz $(ORIGDIR)
+	rm -r $(ORIGDIR)
+
+binary: binary-indep binary-arch
+.PHONY: config build clean binary-indep binary-arch binary install get-orig-source
+

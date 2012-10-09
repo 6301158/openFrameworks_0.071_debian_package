@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/openframeworks
+
+Name: openframeworks addons
+Description: addons for openframeworks
+Version: 0.071
+Requires: openframeworks opencv
+Conflicts: 
+Libs: -L${libdir} -lopenframeworks-3dmodelloader -lopenframeworks-accelerometer -lopenframeworks-assimpmodelloader -lopenframeworks-dirlist -lopenframeworks-network -lopenframeworks-opencv -lopenframeworks-osc -lopenframeworks-threadedimageloader -lopenframeworks-thread -lopenframeworks-vectorgraphics -lopenframeworks-vectormath -lopenframeworks-xmlsettings
+Cflags: -I${includedir}

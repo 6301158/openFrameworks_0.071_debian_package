@@ -1,0 +1,2864 @@
+-----------------------------------------------------------------
+building example in  + ./examples/communication/firmataExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_NOTICE: [0] = ttyS3
+OF: OF_LOG_NOTICE: [1] = ttyS2
+OF: OF_LOG_NOTICE: [2] = ttyS1
+OF: OF_LOG_NOTICE: [3] = ttyS0
+OF: OF_LOG_ERROR: ofSerial: unable to open port /dev/tty.usbmodemfd121
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: ofSerial: serial not inited
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_NOTICE: ofSerialInit: opening port /dev/tty.usbmodemfd121 @ 57600 bps
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/communication/serialExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_NOTICE: [0] = ttyS3
+OF: OF_LOG_NOTICE: [1] = ttyS2
+OF: OF_LOG_NOTICE: [2] = ttyS1
+OF: OF_LOG_NOTICE: [3] = ttyS0
+OF: OF_LOG_ERROR: ofSerial: unable to open port /dev/ttyS3
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_NOTICE: ofSerialInit: opening port /dev/ttyS3 @ 9600 bps
+OF: OF_LOG_VERBOSE: OF app is being terminated!
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/math/noise1dExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'void testApp::renderLinearSignedNoiseDemo()':
+testApp.cpp:232:8: warning: unused variable 'noiseAmount' [-Wunused-variable]
+testApp.cpp: In member function 'void testApp::renderRadialSignedNoiseDemo()':
+testApp.cpp:215:23: warning: 'py' may be used uninitialized in this function [-Wmaybe-uninitialized]
+testApp.cpp:215:23: warning: 'px' may be used uninitialized in this function [-Wmaybe-uninitialized]
+g++ -o ofxSimpleSlider.o -c ofxSimpleSlider.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./ofxSimpleSlider.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/math/noise1dOctaveExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'void testApp::setupMultibandNoiseDemo()':
+testApp.cpp:66:9: warning: unused variable 'sliderY' [-Wunused-variable]
+testApp.cpp: In member function 'void testApp::render1DNoiseStrip(float, float, float, float, float, float*)':
+testApp.cpp:167:8: warning: unused variable 'now' [-Wunused-variable]
+g++ -o ofxSimpleSlider.o -c ofxSimpleSlider.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./ofxSimpleSlider.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/math/noiseField2dExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:88:11: warning: unused variable 's' [-Wunused-variable]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/math/trigonometricMotionExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:41:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:44:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:90:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:98:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::mousePressed(int, int, int)':
+testApp.cpp:194:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:205:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/math/particlesExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'void testApp::resetParticles()':
+testApp.cpp:27:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:36:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:42:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:52:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:58:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o demoParticle.o -c demoParticle.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+demoParticle.cpp: In member function 'void demoParticle::update()':
+demoParticle.cpp:98:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./demoParticle.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/math/periodicSignalsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'void testApp::speedChanged()':
+testApp.cpp:120:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o ofxSimpleSlider.o -c ofxSimpleSlider.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./ofxSimpleSlider.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/math/trigonometryExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/math/vectorMathExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/multiLightExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/slowFastRendering/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:36:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:65:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/billboardExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/viewportExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/billboardRotationExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/shaderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_VERBOSE: Creating GLSL Program
+OF: OF_LOG_VERBOSE: GL_VERTEX_SHADER shader compiled.
+OF: OF_LOG_VERBOSE: GL_FRAGMENT_SHADER shader compiled.
+OF: OF_LOG_VERBOSE: Attaching shader of type GL_FRAGMENT_SHADER
+OF: OF_LOG_VERBOSE: Attaching shader of type GL_VERTEX_SHADER
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_VERBOSE: Program linked.
+OF: OF_LOG_VERBOSE: OF app is being terminated!
+OF: OF_LOG_VERBOSE: Detaching and deleting shader of type GL_FRAGMENT_SHADER
+OF: OF_LOG_VERBOSE: Detaching and deleting shader of type GL_VERTEX_SHADER
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/pointsAsTextures/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:85:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+Shader is loaded
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/geometryShaderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:53:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+./test-with-Makefile.sh: line 17: 28812 Segmentation fault      ./app
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/fboTrailsExample/src
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_NOTICE: ofFbo::checkGLSupport()
+maxColorAttachments: 8
+maxDrawBuffers: 8
+maxSamples: 1
+OF: OF_LOG_NOTICE: FRAMEBUFFER_COMPLETE - OK
+OF: OF_LOG_NOTICE: ofFbo::checkGLSupport()
+maxColorAttachments: 8
+maxDrawBuffers: 8
+maxSamples: 1
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_NOTICE: FRAMEBUFFER_COMPLETE - OK
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/vboExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/singleLightExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/alphaMaskingShaderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_NOTICE: ofFbo::checkGLSupport()
+maxColorAttachments: 8
+maxDrawBuffers: 8
+maxSamples: 1
+OF: OF_LOG_NOTICE: FRAMEBUFFER_COMPLETE - OK
+OF: OF_LOG_NOTICE: ofFbo::checkGLSupport()
+maxColorAttachments: 8
+maxDrawBuffers: 8
+maxSamples: 1
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_NOTICE: FRAMEBUFFER_COMPLETE - OK
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/GPUparticleSystemExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+./test-with-Makefile.sh: line 17: 28954 Segmentation fault      ./app
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/textureExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/textureScreengrabExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/gl/multiTextureShaderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: ofGstUtils: no devices found exiting without initializing
+OF: OF_LOG_NOTICE: Probing devices with udev...
+OF: OF_LOG_WARNING: received a preroll without allocation
+OF: OF_LOG_NOTICE: ofFbo::checkGLSupport()
+maxColorAttachments: 8
+maxDrawBuffers: 8
+maxSamples: 1
+OF: OF_LOG_NOTICE: FRAMEBUFFER_COMPLETE - OK
+OF: OF_LOG_NOTICE: ofFbo::checkGLSupport()
+maxColorAttachments: 8
+maxDrawBuffers: 8
+maxSamples: 1
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_NOTICE: FRAMEBUFFER_COMPLETE - OK
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: nOF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: getTextureData() - texture has not been allocated
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+
+(app:29044): GStreamer-CRITICAL **: gst_mini_object_unref: assertion `GST_IS_MINI_OBJECT (mini_object)' failed
+ot loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/dirListExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/sortingExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::setup()':
+testApp.cpp:62:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:71:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:88:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:90:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:98:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:100:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:131:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/fileOpenSaveDialogExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:20:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:24:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_VERBOSE: User hit cancel
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_VERBOSE: OF app is being terminated!
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/threadExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/systemSpeakExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/loggingExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_NOTICE: 5s timer: Run time is 0 seconds
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/windowExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+266
+266
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/fileBufferLoadingCSVExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::keyPressed(int)':
+testApp.cpp:74:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o MorseCodePlayer.o -c MorseCodePlayer.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+MorseCodePlayer.cpp: In member function 'void MorseCodePlayer::playCode(std::string)':
+MorseCodePlayer.cpp:46:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./MorseCodePlayer.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+./test-with-Makefile.sh: line 17: 29297 Segmentation fault      ./app
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/loadTextFileExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:73:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+Congratulations!
+Today is your day.
+You're off to Great Places!
+You're off and away!
+
+You have brains in your head.
+You have feet in your shoes.
+You can steer yourself 
+any direction you choose.
+You're on your own. And you know what you know.
+And YOU are the guy who'll decide where to go.
+
+You'll look up and down streets. Look 'em over with care.
+About some you will say, "I don't choose to go there."
+With your head full of brains and your shoes full of feet, 
+you're too smart to go down any not-so-good street.
+
+And you may not find any
+you'll want to go down.
+In that case, of course,
+you'll head straight out of town.
+
+It's opener there
+in the wide open air.
+
+Out there things can happen
+and frequently do
+to people as brainy
+and footsy as you.
+
+And then things start to happen,
+don't worry. Don't stew.
+Just go right along.
+You'll start happening too.
+
+OH!
+THE PLACES YOU'LL GO!
+
+You'll be on y our way up!
+You'll be seeing great sights!
+You'll join the high fliers
+who soar to high heights.
+
+You won't lag behind, because you'll have the speed.
+You'll pass the whole gang and you'll soon take the lead.
+Wherever you fly, you'll be best of the best.
+Wherever you go, you will top all the rest.
+
+Except when you don't.
+Because, sometimes, you won't.
+
+I'm sorry to say so
+but, sadly, it's true
+that Bang-ups
+and Hang-ups
+can happen to you.
+
+You can get all hung up
+in a prickle-ly perch.
+And your gang will fly on.
+You'll be left in a Lurch.
+
+You'll come down from the Lurch
+with an unpleasant bump.
+And the chances are, then,
+that you'll be in a Slump.
+
+And when you're in a Slump,
+you're not in for much fun.
+Un-slumping yourself
+is not easily done.
+
+You will come to a place where the streets are not marked.
+Some windows are lighted. But mostly they're darked.
+A place you could sprain both your elbow and chin!
+Do you dare to stay out? Do you dare to go in?
+How much can you lose? How much can you win?
+
+And IF you go in, should you turn left or right...
+or right-and-three-quarters? Or, maybe, not quite?
+Or go around back and sneak in from behind?
+Simple it's not, I'm afraid you will find,
+for a mind-maker-upper to make up his mind.
+
+You can get so confused
+that you'll start in to race
+down long wiggled roads at a break-necking pace
+and grind on for miles cross weirdish wild space,
+headed, I fear, toward a most useless place.
+The Waiting Place...
+
+...for people just waiting.
+Waiting for a train to go
+or a bus to come, or a plane to go
+or the mail to come, or the rain to go
+or the phone to ring, or the snow to snow
+or the waiting around for a Yes or No
+or waiting for their hair to grow.
+Everyone is just waiting.
+
+Waiting for the fish to bite
+or waiting for the wind to fly a kite
+or waiting around for Friday night
+or waiting, perhaps, for their Uncle Jake
+or a pot to boil, or a Better Break
+or a string of pearls, or a pair of pants
+or a wig with curls, or Another Chance.
+Everyone is just waiting.
+
+NO!
+That's not for you!
+
+Somehow you'll escape
+all that waiting and staying
+You'll find the bright places
+where Boom Bands are playing.
+
+With banner flip-flapping,
+once more you'll ride high!
+Ready for anything under the sky.
+Ready because you're that kind of a guy!
+
+Oh, the places you'll go! There is fun to be done!
+There are points to be scored. There are games to be won.
+And the magical things you can do with that ball
+will make you the winning-est winner of all.
+Fame! You'll be as famous as famous can be,
+with the whole wide world watching you win on TV.
+
+Except when they don't
+Because, sometimes they won't.
+
+I'm afraid that some times
+you'll play lonely games too.
+Games you can't win
+'cause you'll play against you.
+
+All Alone!
+Whether you like it or not,
+Alone will be something
+you'll be quite a lot.
+
+And when you're alone, there's a very good chance
+you'll meet things that scare you right out of your pants.
+There are some, down the road between hither and yon,
+that can scare you so much you won't want to go on.
+
+But on you will go
+though the weather be foul.
+On you will go
+though your enemies prowl.
+On you will go
+though the Hakken-Kraks howl.
+Onward up many
+a frightening creek,
+though your arms may get sore
+and your sneakers may leak.
+
+On and on you will hike,
+And I know you'll hike far
+and face up to your problems
+whatever they are.
+
+You'll get mixed up, of course,
+as you already know.
+You'll get mixed up 
+with many strange birds as you go.
+So be sure when you step.
+Step with care and great tact
+and remember that Life's 
+a Great Balancing Act.
+Just never foget to be dexterous and deft.
+And never mix up your right foot with your left.
+
+And will you succeed?
+Yes! You will, indeed!
+(98 and 3/4 percent guaranteed.)
+
+KID, YOU'LL MOVE MOUNTAINS!
+
+So...
+be your name Buxbaum or Bixby or Bray
+or Mordecai Ali Van Allen O'Shea,
+You're off the Great Places!
+Today is your day!
+Your mountain is waiting.
+So...get on your way!
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/conversionExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+splitting ' a,,b, c , ' with ','
+ignoreEmpty:false trim:false { a, , b,  c ,  }
+ignoreEmpty:false trim:true {a, , b, c, }
+ignoreEmpty:true trim:false { a, b,  c ,  }
+ignoreEmpty:true trim:true {a, b, c}
+
+splitting ' a<><>b<> c <> ' with '<>'
+ignoreEmpty:false trim:false { a, , b,  c ,  }
+ignoreEmpty:false trim:true {a, , b, c, }
+ignoreEmpty:true trim:false { a, b,  c ,  }
+ignoreEmpty:true trim:true {a, b, c}
+
+empty
+0
+0
+0
+ 
+
+strings
+123
+123.4
+123.4
+123
+123.40000
+123.40000
+
+ints
+123
+123
+123
+123
+
+float
+123
+123.4
+123.4
+123.4
+
+bool
+1
+0
+1
+0
+1
+0
+
+char
+a
+b
+1
+0
+
+to binary
+00000000000000000000000000001000
+00000000000000000000000001000000
+00000000000000000000010000000000
+01100001
+0100000000100001000000000000000000000000000000000000000000000000
+01000001000000000000000000000000
+01000001000010000000000000000000
+01000001000100000000000000000000
+011000010110001001100011
+011000010110001001100011
+
+to binary
+8
+64
+1024
+a
+8.5
+64.5
+abc
+
+to hex
+61
+00000080
+43000000
+4060000000000000
+616263
+61626364
+61626364656667
+
+hex to int
+255
+255
+128
+128.5
+a
+abc
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/utils/regularExpressionExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'void testApp::searchGoogleImages()':
+testApp.cpp:95:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:107:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:116:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:133:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:139:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:147:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+seraching for http://www.google.com/search?q=openframeworks&tbm=isch&sout=1&tbs=isz&&start=0
+seraching for http://www.google.com/search?q=openframeworks&tbm=isch&sout=1&tbs=isz&&start=22
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/modelNoiseExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from /usr/include/openFrameworks/assimp.h:47:0,
+                 from /usr/include/openFrameworks/ofxAssimpModelLoader.h:5,
+                 from testApp.h:19,
+                 from testApp.cpp:15:
+/usr/include/openFrameworks/aiTypes.h:488:26: fatal error: aiVector3D.inl: No such file or directory
+compilation terminated.
+make: *** [testApp.o] Error 1
+./test-with-Makefile.sh: line 52: ./app: No such file or directory
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/meshFromCamera/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: ofGstUtils: no devices found exiting without initializing
+OF: OF_LOG_NOTICE: Probing devices with udev...
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNINGOF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/normalsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:113:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/ofBoxExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/advanced3dExample/src
+g++ -o Swarm.o -c Swarm.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+Swarm.cpp: In member function 'virtual void swarm::customDraw()':
+Swarm.cpp:66:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Swarm.cpp: In member function 'void swarm::update()':
+Swarm.cpp:97:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o OrthoCamera.o -c OrthoCamera.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o Grid.o -c Grid.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./Swarm.o ./testApp.o ./OrthoCamera.o ./Grid.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/pointCloudExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/QuaternionLatLongExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:67:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/easyCamExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/QuaternionArcballExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/pointPickerExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/cameraParentingExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::mouseDragged(int, int, int)':
+testApp.cpp:281:15: warning: unused variable 'px' [-Wunused-variable]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+
+** MOVING CAMERA 1 **
+POSITION: 80.000000 40.000000 30.000000
+X-AXIS: 0.429882 0.000000 -0.902885
+Y-AXIS: -0.610349 0.736903 -0.290599
+Z-AXIS: 0.665339 0.675998 0.316781
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/cameraRibbonExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:31:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:53:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/3d/orientationExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:51:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/video/asciiVideo/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: ofGstUtils: no devices found exiting without initializing
+OF: OF_LOG_ERROR: ofTrueTypeFont::loadFont - INVALID FILENAME: /home/user/OF/openframeworks-0.071/examples/video/asciiVideo/bin/appô>·Kmk·q¬/data/Courier New Bold.ttf: FT_Error = 1
+./test-with-Makefile.sh: line 17: 29813 Segmentation fault      ./app
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/video/videoPlayerExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+
+(app:29843): GStreamer-CRITICAL **: gst_mini_object_unref: assertion `GST_IS_MINI_OBJECT (mini_object)' failed
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/video/videoGrabberExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: ofGstUtils: no devices found exiting without initializing
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_NOTICE: Probing devices with udev...
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/threadedImageLoaderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:35:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image2
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: signaling new request condition
+OF: OF_LOG_VERBOSE: got request image2
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image4
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image2
+OF: OF_LOG_VERBOSE: got request image4
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image6
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image4
+OF: OF_LOG_VERBOSE: got request image6
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image8
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image6
+OF: OF_LOG_VERBOSE: got request image8
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image10
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image8
+OF: OF_LOG_VERBOSE: got request image10
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image12
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image10
+OF: OF_LOG_VERBOSE: got request image12
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image14
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image12
+OF: OF_LOG_VERBOSE: got request image14
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image16
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image14
+OF: OF_LOG_VERBOSE: got request image16
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image18
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image16
+OF: OF_LOG_VERBOSE: got request image18
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image20
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image18
+OF: OF_LOG_VERBOSE: got request image20
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image22
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image20
+OF: OF_LOG_VERBOSE: got request image22
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image24
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image22
+OF: OF_LOG_VERBOSE: got request image24
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image26
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image24
+OF: OF_LOG_VERBOSE: got request image26
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image28
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image26
+OF: OF_LOG_VERBOSE: got request image28
+OF: OF_LOG_VERBOSE: starting thread loop 
+OF: OF_LOG_VERBOSE: querying request image30
+OF: OF_LOG_VERBOSE: ofURLLoader::update: new response image28
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_VERBOSE: OF app is being terminated!
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/networkUdpReceiverExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:28:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:48:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/3DModelLoaderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from /usr/include/openFrameworks/ofx3DModelLoader.h:4:0,
+                 from testApp.h:4,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/model3DS.h:10:0: warning: ignoring #pragma warning  [-Wunknown-pragmas]
+In file included from /usr/include/openFrameworks/model3DS.h:16:0,
+                 from /usr/include/openFrameworks/ofx3DModelLoader.h:4,
+                 from testApp.h:4,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/ofx3DBaseLoader.h:3:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+In file included from /usr/include/openFrameworks/model3DS.h:16:0,
+                 from /usr/include/openFrameworks/ofx3DModelLoader.h:4,
+                 from testApp.h:4,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/ofx3DBaseLoader.h:4:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+In file included from /usr/include/openFrameworks/model3DS.h:16:0,
+                 from /usr/include/openFrameworks/ofx3DModelLoader.h:4,
+                 from testApp.h:4,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/ofx3DBaseLoader.h:5:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+In file included from /usr/include/openFrameworks/model3DS.h:16:0,
+                 from /usr/include/openFrameworks/ofx3DModelLoader.h:4,
+                 from testApp.h:4,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/ofx3DBaseLoader.h:6:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from /usr/include/openFrameworks/ofx3DModelLoader.h:4:0,
+                 from testApp.h:4,
+                 from main.cpp:2:
+/usr/include/openFrameworks/model3DS.h:10:0: warning: ignoring #pragma warning  [-Wunknown-pragmas]
+In file included from /usr/include/openFrameworks/model3DS.h:16:0,
+                 from /usr/include/openFrameworks/ofx3DModelLoader.h:4,
+                 from testApp.h:4,
+                 from main.cpp:2:
+/usr/include/openFrameworks/ofx3DBaseLoader.h:3:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+In file included from /usr/include/openFrameworks/model3DS.h:16:0,
+                 from /usr/include/openFrameworks/ofx3DModelLoader.h:4,
+                 from testApp.h:4,
+                 from main.cpp:2:
+/usr/include/openFrameworks/ofx3DBaseLoader.h:4:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+In file included from /usr/include/openFrameworks/model3DS.h:16:0,
+                 from /usr/include/openFrameworks/ofx3DModelLoader.h:4,
+                 from testApp.h:4,
+                 from main.cpp:2:
+/usr/include/openFrameworks/ofx3DBaseLoader.h:5:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+In file included from /usr/include/openFrameworks/model3DS.h:16:0,
+                 from /usr/include/openFrameworks/ofx3DModelLoader.h:4,
+                 from testApp.h:4,
+                 from main.cpp:2:
+/usr/include/openFrameworks/ofx3DBaseLoader.h:6:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_NOTICE: texture3DS Texture /home/user/OF/openframeworks-0.071/examples/addons/3DModelLoaderExample/bin/data/squirrel/Squirrel.jpg loaded
+OF: OF_LOG_NOTICE: texture3DS Texture /home/user/OF/openframeworks-0.071/examples/addons/3DModelLoaderExample/bin/data/squirrel/Squirrel.jpg loaded
+[3DS] Model '/home/user/OF/openframeworks-0.071/examples/addons/3DModelLoaderExample/bin/data/squirrel/NewSquirrel.3ds' loaded
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/oscChatSystemExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from /usr/include/openFrameworks/ofxOscReceiver.h:46:0,
+                 from /usr/include/openFrameworks/ofxOsc.h:35,
+                 from testApp.h:4,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/OscPacketListener.h:34:34: fatal error: ../ip/PacketListener.h: No such file or directory
+compilation terminated.
+make: *** [testApp.o] Error 1
+./test-with-Makefile.sh: line 52: ./app: No such file or directory
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/xmlSettingsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/assimpExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from /usr/include/openFrameworks/assimp.h:47:0,
+                 from /usr/include/openFrameworks/ofxAssimpModelLoader.h:5,
+                 from testApp.h:5,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/aiTypes.h:488:26: fatal error: aiVector3D.inl: No such file or directory
+compilation terminated.
+make: *** [testApp.o] Error 1
+./test-with-Makefile.sh: line 52: ./app: No such file or directory
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/opencvExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+
+(app:30070): GStreamer-CRITICAL **: gst_mini_object_unref: assertion `GST_IS_MINI_OBJECT (mini_object)' failed
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/oscSenderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from /usr/include/openFrameworks/ofxOscReceiver.h:46:0,
+                 from /usr/include/openFrameworks/ofxOsc.h:35,
+                 from testApp.h:4,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/OscPacketListener.h:34:34: fatal error: ../ip/PacketListener.h: No such file or directory
+compilation terminated.
+make: *** [testApp.o] Error 1
+./test-with-Makefile.sh: line 52: ./app: No such file or directory
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/oscReceiveExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from /usr/include/openFrameworks/ofxOscReceiver.h:46:0,
+                 from /usr/include/openFrameworks/ofxOsc.h:35,
+                 from testApp.h:4,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/OscPacketListener.h:34:34: fatal error: ../ip/PacketListener.h: No such file or directory
+compilation terminated.
+make: *** [testApp.o] Error 1
+./test-with-Makefile.sh: line 52: ./app: No such file or directory
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/allAddonsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from /usr/include/openFrameworks/ofxOscReceiver.h:46:0,
+                 from /usr/include/openFrameworks/ofxOsc.h:35,
+                 from testApp.h:6,
+                 from testApp.cpp:1:
+/usr/include/openFrameworks/OscPacketListener.h:34:34: fatal error: ../ip/PacketListener.h: No such file or directory
+compilation terminated.
+make: *** [testApp.o] Error 1
+./test-with-Makefile.sh: line 52: ./app: No such file or directory
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/networkTcpClientExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: ofxNetwork:src/ofxTCPManager.cpp: 157 ECONNREFUSED: the server has actively refused to establish the connection
+OF: OF_LOG_ERROR: ofxTCPClient: Connect(127.0.0.111999) failed
+OF: OF_LOG_WARNING: ofxTCPClient: setVerbose is deprecated replaced for OF_LOG_WARNING and OF_LOG_ERROR
+OF: OF_LOG_ERROR: ofxNetwork:src/ofxTCPManager.cpp: 157 ECONNREFUSED: the server has actively refused to establish the connection
+OF: OF_LOG_ERROR: ofxTCPClient: Connect(127.0.0.111999) failed
+OF: OF_LOG_ERROR: ofxNetwork:src/ofxTCPManager.cpp: 157 ECONNREFUSED: the server has actively refused to establish the connection
+OF: OF_LOG_ERROR: ofxTCPClient: Connect(127.0.0.111999) failed
+OF: OF_LOG_ERROR: ofxNetwork:src/ofxTCPManager.cpp: 157 ECONNREFUSED: the server has actively refused to establish the connection
+OF: OF_LOG_ERROR: ofxTCPClient: Connect(127.0.0.111999) failed
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/opencvHaarFinderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:19:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/networkUdpSenderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:30:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::mouseReleased(int, int, int)':
+testApp.cpp:65:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:68:6: warning: unused variable 'sent' [-Wunused-variable]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/networkTcpServerExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:59:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/addons/vectorGraphicsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/imageSequenceExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:78:11: warning: unused variable 'totalTime' [-Wunused-variable]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/blendingExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:22:11: warning: unused variable 'one' [-Wunused-variable]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/fontsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/imageSaverExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/imageCompressionExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/imageLoaderExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/simpleColorKey/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/floatingPointImageExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In function 'ofVec3f getVertexFromImg(ofFloatImage&, int, int)':
+testApp.cpp:23:8: warning: unused variable 'scaleFactor' [-Wunused-variable]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/color/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/imageLoaderWebExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/pdfExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::setup()':
+testApp.cpp:20:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:65:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:73:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::dragEvent(ofDragInfo)':
+testApp.cpp:186:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/imageSubsectionExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/polygonExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/lutFilterExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::keyReleased(int)':
+testApp.cpp:131:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: TITLE "test 1"
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: LUT_3D_SIZE 32
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_ERROR: ofGstUtils: no devices found exiting without initializing
+OF: OF_LOG_NOTICE: Probing devices with udev...
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: TITLE "X Pro II"
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: LUT_3D_SIZE 32
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: TITLE "Walden"
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: LUT_3D_SIZE 32
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: TITLE "Toaster"
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: LUT_3D_SIZE 32
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: TITLE "Sutro"
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: LUT_3D_SIZE 32
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: TITLE "Nashville"
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: LUT_3D_SIZE 32
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: TITLE "Lord Kelvin"
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: LUT_3D_SIZE 32
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: TITLE "Lomo-fi"
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_NOTICE: Skipped line: LUT_3D_SIZE 32
+OF: OF_LOG_NOTICE: Skipped line: 
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/polylineBlobsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:39:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In function 'void drawWithNormals(const ofPolyline&)':
+testApp.cpp:62:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:89:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: ofGstUtils: no devices found exiting without initializing
+OF: OF_LOG_NOTICE: Probing devices with udev...
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNINGOF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_WARNING: not loaded
+OF: OF_LOG_VERBOSE: OF app is being terminated!
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/fontShapesExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/graphics/graphicsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/sound/audioOutputExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:65:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:89:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid device
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+./test-with-Makefile.sh: line 17: 30825 Segmentation fault      ./app
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/sound/soundPlayerFFTExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: ofOpenALSoundPlayer: couldnt read /home/user/OF/openframeworks-0.071/examples/sound/soundPlayerFFTExample/bin/data/sounds/jdee_beat.mp3
+./test-with-Makefile.sh: line 17: 30855 Floating point exception./app
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/sound/audioInputExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:75:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:98:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:121:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:126:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid device
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/sound/soundPlayerExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: ofOpenALSoundPlayer: couldnt read /home/user/OF/openframeworks-0.071/examples/sound/soundPlayerExample/bin/data/sounds/1085.mp3
+./test-with-Makefile.sh: line 17: 30917 Floating point exception./app
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/events/simpleTimer/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+Got the message: Timer Reached
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/events/customEventExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from testApp.h:4:0,
+                 from testApp.cpp:1:
+Bug.h: In member function 'void Bug::draw()':
+Bug.h:77:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::update()':
+testApp.cpp:94:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:114:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:124:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:125:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:151:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:158:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp:163:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+testApp.cpp: In member function 'virtual void testApp::keyPressed(int)':
+testApp.cpp:215:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o GameEvent.o -c GameEvent.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from GameEvent.h:3:0,
+                 from GameEvent.cpp:9:
+Bug.h: In member function 'void Bug::draw()':
+Bug.h:77:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+In file included from testApp.h:4:0,
+                 from main.cpp:2:
+Bug.h: In member function 'void Bug::draw()':
+Bug.h:77:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./GameEvent.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+Game Event: BUG HIT
+Game Event: BUG HIT
+Game Event: BUG HIT
+Game Event: BUG HIT
+Game Event: BUG HIT
+Game Event: BUG HIT
+Game Event: BUG HIT
+Game Event: BUG HIT
+Game Event: BUG HIT
+Game Event: BUG HIT
+Game Event: BUG HIT
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/events/advancedEventsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/events/eventsExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+testApp.cpp: In member function 'virtual void testApp::draw()':
+testApp.cpp:20:8: warning: unused variable 'w' [-Wunused-variable]
+testApp.cpp:21:8: warning: unused variable 'h' [-Wunused-variable]
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./examples/empty/emptyExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~
+-----------------------------------------------------------------
+building example in  + ./apps/myApps/emptyExample/src
+g++ -o testApp.o -c testApp.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+g++ -o main.o -c main.cpp -O2 -g -Wall $(pkg-config openframeworks openframeworks-addons --cflags)
+mkdir -p ../bin
+g++ -o ../bin/app -Wl,-z,defs -Wl,--as-needed -Wl,--no-undefined ./testApp.o ./main.o $(pkg-config openframeworks openframeworks-addons --libs)
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+OF: OF_LOG_ERROR: PortAudio error: Invalid stream pointer
+
+rm -f ../bin/app *.o *~

@@ -1,0 +1,55 @@
+Source: openframeworks
+Section: libs
+Priority: extra
+Maintainer: Jorge Muñoz <punkto@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), dh-buildinfo, quilt, pkg-config,
+ libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev,
+ libgstreamer-plugins-base0.10-dev, libudev-dev,
+ libfreetype6-dev, libavcodec-dev, libavformat-dev, libavutil-dev,
+ libunicap2-dev, libfreeimage-dev, libpoco-dev, libswscale-dev,
+ freeglut3-dev, libglu1-mesa-dev, libgl1-mesa-dev, glee-dev,
+ libxmu-dev, libxxf86vm-dev, libraw1394-dev, libcv-dev, libopencv-dev,
+ libpoco-dev
+Standards-Version: 3.9.3
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/openframeworks.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/openframeworks.git;a=summary
+
+Package: openframeworks-dev
+Section: libdevel
+Architecture: i386
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libopenframeworks0071 (= ${binary:Version}),
+ libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev,
+ libgstreamer-plugins-base0.10-dev, libudev-dev,
+ libfreetype6-dev, libavcodec-dev, libavformat-dev, libavutil-dev,
+ libunicap2-dev, libfreeimage-dev, libpoco-dev, libswscale-dev,
+ freeglut3-dev, libglu1-mesa-dev, libgl1-mesa-dev, glee-dev,
+ libxmu-dev, libxxf86vm-dev, libraw1394-dev, libcv-dev, libopencv-dev,
+ libpoco-dev
+Description: C++ toolkit for creative coding - development
+ Openframeworks is a C++ library designed to assist the creative process
+ by providing a simple and intuitive framework for experimentation.
+ .
+ This package contains the development libraries and headers.
+
+Package: libopenframeworks0071
+Section: libs
+Architecture: i386
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: C++ toolkit for creative coding - runtime
+ Openframeworks is a C++ library designed to assist the creative process
+ by providing a simple and intuitive framework for experimentation.
+ .
+ This package contains the runtime libraries.
+
+Package: libopenframeworks0071-dbg
+Section: debug
+Architecture: i386
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: C++ toolkit for creative coding - debug
+ Openframeworks is a C++ library designed to assist the creative process
+ by providing a simple and intuitive framework for experimentation.
+ .
+ This package contains the debugging symbols.
+
