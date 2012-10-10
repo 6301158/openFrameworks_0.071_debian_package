@@ -1,0 +1,77 @@
+Description: Remove fmodex sound library from the package.
+
+Author: Jorge Muñoz Castañer <punkto@gmail.com>
+---
+--- openframeworks-0.071.orig/libs/openFrameworks/sound/ofSoundPlayer.h
++++ openframeworks-0.071/libs/openFrameworks/sound/ofSoundPlayer.h
+@@ -23,10 +23,6 @@ void ofSoundShutdown();
+ #define OF_SOUND_PLAYER_TYPE ofQuicktimeSoundPlayer
+ #endif
+ 
+-#ifdef OF_SOUND_PLAYER_FMOD
+-#include "ofFmodSoundPlayer.h"
+-#define OF_SOUND_PLAYER_TYPE ofFmodSoundPlayer
+-#endif
+ 
+ #ifdef OF_SOUND_PLAYER_OPENAL
+ #include "ofOpenALSoundPlayer.h"
+--- openframeworks-0.071.orig/libs/openFrameworks/sound/ofSoundPlayer.cpp
++++ openframeworks-0.071/libs/openFrameworks/sound/ofSoundPlayer.cpp
+@@ -7,39 +7,29 @@
+ 
+ //--------------------
+ void ofSoundStopAll(){
+-	#ifdef OF_SOUND_PLAYER_FMOD
+-		ofFmodSoundStopAll();
+-	#endif
++
+ }
+ 
+ //--------------------
+ void ofSoundSetVolume(float vol){
+-	#ifdef OF_SOUND_PLAYER_FMOD
+-		ofFmodSoundSetVolume(vol);
+-	#endif
++
+ }
+ 
+ //--------------------
+ void ofSoundUpdate(){
+-	#ifdef OF_SOUND_PLAYER_FMOD
+-		ofFmodSoundUpdate();
+-	#endif
++
+ }
+ 
+ #ifndef TARGET_ANDROID
+ //--------------------
+ void ofSoundShutdown(){
+-	#ifdef OF_SOUND_PLAYER_FMOD
+-		ofFmodSoundPlayer::closeFmod();
+-	#endif
++
+ }
+ #endif
+ 
+ //--------------------
+ float * ofSoundGetSpectrum(int nBands){
+-	#ifdef OF_SOUND_PLAYER_FMOD
+-		return ofFmodSoundGetSpectrum(nBands);
+-	#elif defined(OF_SOUND_PLAYER_OPENAL)
++	#ifdef OF_SOUND_PLAYER_OPENAL
+ 		return ofOpenALSoundPlayer::getSystemSpectrum(nBands);
+ 	#else
+ 		ofLog(OF_LOG_ERROR, "ofSoundGetSpectrum returning NULL - no implementation!");
+--- openframeworks-0.071.orig/libs/openFrameworks/sound/ofOpenALSoundPlayer.h
++++ openframeworks-0.071/libs/openFrameworks/sound/ofOpenALSoundPlayer.h
+@@ -36,10 +36,7 @@
+ // ---------------------------------------------------------------------------- SOUND SYSTEM FMOD
+ 
+ // --------------------- global functions:
+-void ofFmodSoundStopAll();
+-void ofFmodSoundSetVolume(float vol);
+ void ofOpenALSoundUpdate();						// calls FMOD update.
+-float * ofFmodSoundGetSpectrum(int nBands);		// max 512...
+ 
+ 
+ // --------------------- player functions:

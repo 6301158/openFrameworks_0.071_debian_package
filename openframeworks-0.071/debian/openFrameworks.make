@@ -18,7 +18,7 @@ PKGCONFIG_LIST=gstreamer-0.10 freetype2 gstreamer-app-0.10 gstreamer-video-0.10 
 EXTRA_CFLAGS=-I$(OFDIR)/../FreeImage/include -I$(OFDIR)/../assimp/include \
 	-I$(OFDIR)/../assimp/include/Compiler -I$(OFDIR)/../cairo/include \
 	-I$(OFDIR)/../cairo/include/pixman-1 -I$(OFDIR)/../cairo/include/libpng15 \
-	-I$(OFDIR)/../cairo/include/cairo -I$(OFDIR)/../fmodex/include \
+	-I$(OFDIR)/../cairo/include/cairo \
 	-I$(OFDIR)/../freetype/include -I$(OFDIR)/../freetype/include/freetype2 \
 	-I$(OFDIR)/../freetype/include/freetype2/freetype \
 	-I$(OFDIR)/../freetype/include/freetype2/freetype/internal \
@@ -49,7 +49,7 @@ EXTRA_LDFLAGS=
 LIBS= \
 	-lunicap -lfreeimage -lPocoNet -lPocoUtil -lPocoFoundation -lswscale \
 	-lglut -lGLU -lGL -lglee -lopenal -lasound -lsndfile -lvorbis -lFLAC -logg \
-	-L../../debian/tmp/usr/lib/ -lopenframeworksfmodex \
+	-L../../debian/tmp/usr/lib/  \
 	$$(pkg-config $(PKGCONFIG_LIST) --libs)
 
 DESTDIR=./debian/tmp
@@ -58,9 +58,6 @@ EXTRA_LIBS=$(OFDIR)/../kiss/lib/linux/libkiss.a \
 	$(OFDIR)/../portaudio/lib/linux/libportaudio.a
 
 $(LIBRARY).so.$(MAJOR).$(MINOR): $(SHARED_OBJS)
-	mkdir -p "../../debian/tmp/usr/lib/" ;\
-		cp $(OFDIR)/../fmodex/lib/linux/libfmodex.so \
-		../../debian/tmp/usr/lib/libopenframeworksfmodex.so ;\
 	export PKG_CONFIG_PATH=debian/pkgconfig:$$PKG_CONFIG_PATH; \
 	g++ $(LDFLAGS) $(EXTRA_LDFLAGS) -shared \
 		-Wl,-soname,$(LIBRARY).so.$(MAJOR) \
@@ -101,7 +98,7 @@ clean:
 	rm -f *.so *.so* *.a
 	find . -name "*.o" -exec rm -f {} \;
 
-OF_LIBS=assimp cairo fmodex FreeImage freetype glew kiss poco portaudio \
+OF_LIBS=assimp cairo FreeImage freetype glew kiss poco portaudio \
 	rtAudio tess2
 
 install: $(LIBRARY).a $(LIBRARY).so
@@ -130,9 +127,5 @@ install: $(LIBRARY).a $(LIBRARY).so
 		do \
 			cp "$$f" "$(DESTDIR)/usr/lib/"; \
 		done ; \
-	done ; \
-	cp $(OFDIR)/../fmodex/lib/linux/libfmodex.so \
-		$(DESTDIR)/usr/lib/libopenframeworksfmodex.so.$(MAJOR).$(MINOR) ;\
-	cp $(OFDIR)/../fmodex/lib/linux/libfmodex.so \
-		$(DESTDIR)/usr/lib/libopenframeworksfmodex.so
+	done
 

@@ -8,5 +8,5 @@ Description: openFrameworks
 Version: 0.071
 Requires: gstreamer-0.10, freetype2, gstreamer-app-0.10, gstreamer-video-0.10, libavcodec, libavutil, glee, zlib, assimp
 Conflicts: 
-Libs: -L${libdir} -lopenframeworksfmodex -lopenframeworks -lunicap -lfreeimage -lPocoNet -lPocoUtil -lPocoFoundation -lswscale -lglut -lGLU -lGL -lglee -lGLEW -lopenal -lasound -lsndfile -lvorbis -lFLAC -logg -lz
+Libs: -L${libdir} -lopenframeworks -lunicap -lfreeimage -lPocoNet -lPocoUtil -lPocoFoundation -lswscale -lglut -lGLU -lGL -lglee -lGLEW -lopenal -lasound -lsndfile -lvorbis -lFLAC -logg -lz
 Cflags: -I${includedir} -I/usr/include/ffmpeg/ -I/usr/include/unicap/ -I/usr/include/Poco/

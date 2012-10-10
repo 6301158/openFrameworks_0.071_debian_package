@@ -1,7 +1,7 @@
 prefix=/usr
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
-includedir=${prefix}/include/openframeworks
+includedir=${prefix}/include/openFrameworks
 
 Name: openframeworks addons
 Description: addons for openframeworks
