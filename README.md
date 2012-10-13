@@ -1,7 +1,7 @@
 openFrameworks_0.071_debian_package
 ===================================
 
-Attemp to make a debian package for OpenFrameworks v0.071
+Attemp to make a debian package for OpenFrameworks v0.071 (so far, 32 bit)
 
 WARNING! It is still under development. Use it under your own responsability (well... it applies also when the package works :-P)
 
