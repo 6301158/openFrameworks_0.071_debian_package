@@ -28,7 +28,7 @@ You can find the packages compiled in the downloads section, as well as the orig
 How to test the packages.
 ========================
 
-1. First, get a brand new Debian testing/unstable installation.
+1\. First, get a brand new Debian testing/unstable installation.
 
 Now, you have to download the sources.
 
@@ -57,7 +57,7 @@ In this case, you’ll need to expand the source code:
 $ dpkg-source -x openframeworks_0.071-1.1.dsc
 </code></pre>
 
-2. In order to know the necessary packages for the compilation, you can ask for the unsatisfied dependences in this way:
+2\. In order to know the necessary packages for the compilation, you can ask for the unsatisfied dependences in this way:
 
 <pre><code>
 $ cd openframeworks-0.071/
@@ -65,13 +65,13 @@ openframeworks-0.071$ dpkg-checkbuilddeps
 dpkg-checkbuilddeps: Dependencias de construcción no satisfechas: debhelper (>= 8.0.0) dh-buildinfo quilt pkg-config libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libudev-dev libfreetype6-dev libavcodec-dev libavformat-dev libavutil-dev libunicap2-dev libfreeimage-dev libpoco-dev libswscale-dev freeglut3-dev libglu1-mesa-dev libgl1-mesa-dev glee-dev libxmu-dev libxxf86vm-dev libraw1394-dev libcv-dev libopencv-dev libopenal-dev libsndfile1-dev libjack-dev libglew1.5-dev libasound2-dev libassimp-dev
 </code></pre>
 
-3. And install all required packages. Remember to install devscripts too:
+3\. And install all required packages. Remember to install devscripts too:
 
 <pre><code>
 # apt-get install build-essential debhelper devscripts  dh-buildinfo quilt pkg-config libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libudev-dev libfreetype6-dev libavcodec-dev libavformat-dev libavutil-dev libunicap2-dev libfreeimage-dev libpoco-dev libswscale-dev freeglut3-dev libglu1-mesa-dev libgl1-mesa-dev glee-dev libxmu-dev libxxf86vm-dev libraw1394-dev libcv-dev libopencv-dev libopenal-dev libsndfile1-dev libjack-dev libglew1.5-dev libasound2-dev libassimp-dev
 </code></pre>
 
-4. You are ready for compiling:
+4\. You are ready for compiling:
 
 <pre><code>
 openframeworks-0.071$ debuild -us -uc
@@ -101,7 +101,7 @@ W: openframeworks-dev: bad-homepage <insert the upstream URL, if relevant>
 Finished running lintian.
 </code></pre>
 
-5. Now it’s time to install the packages:
+5\. Now it’s time to install the packages:
 
 <pre><code>
 openframeworks-0.071$ ls ../*openframeworks*.deb
@@ -122,13 +122,13 @@ Configurando openframeworks-dev (0.071-1.1) …
 # exit
 </code></pre>
 
-6. We can make the examples shipped with OF using a script that, for every applications in the directories “examples” and “apps”
+6\. We can make the examples shipped with OF using a script that, for every applications in the directories “examples” and “apps”
 
-# writes a new Makefile in the “src” directory (so the original Makefiles are no modified)
-# makes the app
-# executes the app
-# performs a “make clean”
-# deletes the Makefile
+- writes a new Makefile in the “src” directory (so the original Makefiles are no modified)
+- makes the app
+- executes the app
+- performs a “make clean”
+- deletes the Makefile
 
 <pre><code>
 openframeworks-0.071$ cd debian/scripts/
