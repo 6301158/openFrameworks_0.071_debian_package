@@ -9,7 +9,8 @@ Build-Depends: debhelper (>= 8.0.0), dh-buildinfo, quilt, pkg-config,
  libunicap2-dev, libfreeimage-dev, libpoco-dev, libswscale-dev,
  freeglut3-dev, libglu1-mesa-dev, libgl1-mesa-dev, glee-dev,
  libxmu-dev, libxxf86vm-dev, libraw1394-dev, libcv-dev, libopencv-dev,
- libpoco-dev, libopenal-dev, libsndfile1-dev, libjack-dev, libglew1.5-dev
+ libpoco-dev, libopenal-dev, libsndfile1-dev, libjack-dev, libglew1.5-dev,
+ libasound2-dev, libassimp-dev
 Standards-Version: 3.9.3
 Homepage: <insert the upstream URL, if relevant>
 #Vcs-Git: git://git.debian.org/collab-maint/openframeworks.git
@@ -26,7 +27,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  libunicap2-dev, libfreeimage-dev, libpoco-dev, libswscale-dev,
  freeglut3-dev, libglu1-mesa-dev, libgl1-mesa-dev, glee-dev,
  libxmu-dev, libxxf86vm-dev, libraw1394-dev, libcv-dev, libopencv-dev,
- libpoco-dev, libopenal-dev, libsndfile1-dev, libjack-dev, libglew1.5-dev
+ libpoco-dev, libopenal-dev, libsndfile1-dev, libjack-dev, libglew1.5-dev,
+ libasound2-dev, libassimp-dev
 Description: C++ toolkit for creative coding - development
  Openframeworks is a C++ library designed to assist the creative process
  by providing a simple and intuitive framework for experimentation.
