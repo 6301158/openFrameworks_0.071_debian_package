@@ -5,16 +5,10 @@ Attemp to make a debian package for OpenFrameworks v0.071 (so far, 32 bit)
 
 WARNING! It is still under development. Use it under your own responsability (well... it applies also when the package works :-P)
 
-So far, some of the examples doesn't work for me for any reason. These are:
-- ./examples/gl/geometryShaderExample/
-- ./examples/gl/GPUparticleSystemExample
-- ./examples/3d/modelNoiseExample
-- ./examples/video/asciiVideo
-- ./examples/addons/oscChatSystemExample
-- ./examples/addons/assimpExample
-- ./examples/addons/allAddonsExample
-- ./examples/sound/audioOutputExample
-- ./examples/sound/soundPlayerExample
+So far, some of the examples doesn't work for me for any reason. Information about this can be found in the wiki:
+https://github.com/punkto/openFrameworks_0.071_debian_package/wiki/examples-compilation-status
+
+You can find the actual lintian output here: https://github.com/punkto/openFrameworks_0.071_debian_package/wiki/lintian-output
 
 You can find the packages compiled in the downloads section, as well as the original source code of OF.
 
