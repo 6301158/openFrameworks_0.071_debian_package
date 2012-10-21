@@ -49,7 +49,7 @@ EXTRA_LDFLAGS=
 LIBS= \
 	-lunicap -lfreeimage -lPocoNet -lPocoUtil -lPocoFoundation -lswscale \
 	-lglut -lGLU -lGL -lglee -lopenal -lasound -lsndfile -lvorbis -lFLAC -logg \
-	-L../../debian/tmp/usr/lib/  \
+	-loscpack -L../../debian/tmp/usr/lib/  \
 	$$(pkg-config $(PKGCONFIG_LIST) --libs)
 
 DESTDIR=./debian/tmp
