@@ -49,13 +49,13 @@ $ dpkg-source -x openframeworks_0.071-1.1.dsc
 <pre><code>
 $ cd openframeworks-0.071/
 openframeworks-0.071$ dpkg-checkbuilddeps
-dpkg-checkbuilddeps: Dependencias de construcción no satisfechas: debhelper (>= 8.0.0) dh-buildinfo quilt pkg-config libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libudev-dev libfreetype6-dev libavcodec-dev libavformat-dev libavutil-dev libunicap2-dev libfreeimage-dev libpoco-dev libswscale-dev freeglut3-dev libglu1-mesa-dev libgl1-mesa-dev glee-dev libxmu-dev libxxf86vm-dev libraw1394-dev libcv-dev libopencv-dev libopenal-dev libsndfile1-dev libjack-dev libglew1.5-dev libasound2-dev libassimp-dev
+dpkg-checkbuilddeps: Dependencias de construcción no satisfechas: debhelper (>= 8.0.0) dh-buildinfo quilt pkg-config ...
 </code></pre>
 
 3\. And install all required packages. Remember to install devscripts too:
 
 <pre><code>
-# apt-get install build-essential debhelper devscripts  dh-buildinfo quilt pkg-config libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libudev-dev libfreetype6-dev libavcodec-dev libavformat-dev libavutil-dev libunicap2-dev libfreeimage-dev libpoco-dev libswscale-dev freeglut3-dev libglu1-mesa-dev libgl1-mesa-dev glee-dev libxmu-dev libxxf86vm-dev libraw1394-dev libcv-dev libopencv-dev libopenal-dev libsndfile1-dev libjack-dev libglew1.5-dev libasound2-dev libassimp-dev
+# apt-get install build-essential debhelper devscripts dh-buildinfo quilt pkg-config ...
 </code></pre>
 
 4\. You are ready for compiling:
