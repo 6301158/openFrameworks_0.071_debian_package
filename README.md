@@ -24,7 +24,7 @@ If you want to use git, you can get the source code  using git and ask for the o
 <pre><code>
 $ git clone git://github.com/punkto/openFrameworks_0.071_debian_package.git
 $ cd openframeworks-0.071
-openframeworks-0.071$ dpkg-buildpackage -Tget-orig-source
+openframeworks-0.071$ dpkg-buildpackage -Tget-orig-source -d
 </code></pre>
 
 Alternatively, go to the “downloads” section and download the full package:
