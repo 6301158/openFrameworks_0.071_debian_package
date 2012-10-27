@@ -6,11 +6,19 @@ all: $(LIBRARY).a $(LIBRARY).so
 MAJOR=0071
 MINOR=0
 
-#SOURCES = $(shell find . -name "*.cpp" | grep -v "sound/")
 SOURCES = $(shell find . -name "*.cpp")
 
 SHARED_OBJS = $(SOURCES:.cpp=.shared.o)
 STATIC_OBJS = $(SOURCES:.cpp=.static.o)
+
+OF_HEADERS = $(shell awk '/include/ {print}' ./ofMain.h | sed 's/"//g' | sed 's/\#include//')
+OTHER_HEADERS = tesselator.h ofVec3f.h ofVec2f.h ofVec4f.h ofEventUtils.h \
+				ofMain.h ofMatrix3x3.h ofMatrix4x4.h ofQuaternion.h \
+				cairo-features.h cairo-pdf.h cairo.h cairo-version.h \
+				cairo-deprecated.h cairo-svg.h ofBaseSoundStream.h \
+				ofPASoundStream.h ofBaseSoundPlayer.h ofOpenALSoundPlayer.h \
+				kiss_fft.h kiss_fftr.h ofGstVideoGrabber.h ofGstUtils.h \
+				ofGstVideoPlayer.h ofAppGlutWindow.h ofAppBaseWindow.h
 
 PKGCONFIG_LIST=gstreamer-0.10 freetype2 gstreamer-app-0.10 gstreamer-video-0.10 \
 	libavcodec libavutil glee libudev glew gtk+-2.0 openal jack zlib
@@ -98,34 +106,21 @@ clean:
 	rm -f *.so *.so* *.a
 	find . -name "*.o" -exec rm -f {} \;
 
-OF_LIBS=assimp cairo FreeImage freetype glew kiss poco portaudio \
-	rtAudio tess2
-
 install: $(LIBRARY).a $(LIBRARY).so
 	mkdir -p "$(DESTDIR)/usr/lib/"
 	cp -a *.a "$(DESTDIR)/usr/lib/"
 	cp -a *.so* "$(DESTDIR)/usr/lib/"
 
-	mkdir -p "$(DESTDIR)/usr/include/openFrameworks/"
-	find . -name "*.h" | \
-		while read f; \
-		do \
-			cp "$$f" "$(DESTDIR)/usr/include/openFrameworks/"; \
-		done
+	echo $(OF_HEADERS)
 
-	echo "Installing other libraries:"
-	for a in $(OF_LIBS) ; \
-	do \
-		echo "Installing $a..." ; \
-		find ../$a -name "*.h" | \
-		while read f; \
-		do \
-			cp "$$f" "$(DESTDIR)/usr/include/openFrameworks/"; \
-		done ;\
-		find ../$a -name "*.a" | \
-		while read f; \
-		do \
-			cp "$$f" "$(DESTDIR)/usr/lib/"; \
-		done ; \
+	mkdir -p "$(DESTDIR)/usr/include/openFrameworks/"
+	for file in $(OF_HEADERS); do \
+		find . -name $$file  | \
+		xargs -I {} cp {} "$(DESTDIR)/usr/include/openFrameworks/"; \
 	done
 
+	echo "Installing other headers:"
+	for file in $(OTHER_HEADERS); do \
+		find .. -name $$file  | \
+		xargs -I {} cp {} "$(DESTDIR)/usr/include/openFrameworks/"; \
+	done

@@ -1,7 +1,7 @@
 all: $(LIBRARY).a $(LIBRARY).so
 
 SOURCES = $(shell find src libs -name '*.cpp' -o -name '*.cc' 2>/dev/null)
-HEADERS = $(shell find src libs -name '*.h' -o -name '*.hpp' 2>/dev/null)
+#HEADERS = $(shell find src libs -name '*.h' -o -name '*.hpp' 2>/dev/null)
 
 MAJOR=0071
 MINOR=0
@@ -70,5 +70,9 @@ install: $(LIBRARY).a $(LIBRARY).so
 	cp -a *.so* "$(DESTDIR)/usr/lib/"
 
 	mkdir -p "$(DESTDIR)/usr/include/openFrameworks/"
-	cp $(HEADERS) "$(DESTDIR)/usr/include/openFrameworks/"
+	#cp $(HEADERS) "$(DESTDIR)/usr/include/openFrameworks/"
+	for file in $(HEADERS); do \
+		find . -name $$file  | \
+		xargs -I {} cp {} "$(DESTDIR)/usr/include/openFrameworks/"; \
+	done
 

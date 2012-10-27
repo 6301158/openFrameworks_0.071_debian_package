@@ -31,16 +31,10 @@ config-stamp:
 	[ ! -d debian/patches ] || $(MAKE) -f /usr/share/quilt/quilt.make patch
 	touch $@
 
-ADDONS = ofxAccelerometer ofxDirList ofxNetwork ofxOsc ofxThreadedImageLoader \
-	ofxVectorMath ofx3DModelLoader ofxAssimpModelLoader ofxMultiTouch \
-	ofxOpenCv ofxThread ofxVectorGraphics ofxXmlSettings
-
 # does compile ofxMultiTouch in Linux?
 ADDONS = ofxAccelerometer ofxDirList ofxNetwork ofxOsc ofxThreadedImageLoader \
 	ofxVectorMath ofx3DModelLoader ofxAssimpModelLoader \
 	ofxOpenCv ofxThread ofxVectorGraphics ofxXmlSettings
-
-#ADDONS = ofxOsc
 
 clean: 
 	dh_testdir
